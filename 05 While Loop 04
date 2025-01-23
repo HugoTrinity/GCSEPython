@@ -1,0 +1,9 @@
+sentry = True
+count = 0
+carryon = "y"
+while carryon == "y":
+    name = input("Who do you want to invite to the party")
+    print(name ,"has now been invited")
+    count += 1
+    carryon = input("Do you want to invite more people y/n")
+print("You have invited", count ,"to the party")
