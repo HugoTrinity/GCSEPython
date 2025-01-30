@@ -1,0 +1,12 @@
+string = input("")
+swap1 = input("")
+swap1list = list(swap1)
+x = swap1list[0]
+print(x)
+
+char_list = list(string)
+
+char_list[2], char_list[6] = char_list [6], char_list[2]
+
+nstring = "".join(char_list)
+print(nstring)
