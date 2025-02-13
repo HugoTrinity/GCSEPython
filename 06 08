@@ -1,0 +1,7 @@
+guests = int(input("How many people do you want to invite to your birthday?"))
+if guests < 10:
+    for i in range(0, guests):
+        name = input("What is the name of your guest?")
+        print(name, "has been invited.")
+elif guests >= 10:
+    print("Too many people")
