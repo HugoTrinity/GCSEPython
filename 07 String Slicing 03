@@ -1,0 +1,4 @@
+firstName = input("What is your first name in lowercase: ")
+lastName = input("What is your last name in lowercase: ")
+
+print(firstName + " " + lastName)
