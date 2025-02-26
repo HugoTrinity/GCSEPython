@@ -1,0 +1,7 @@
+vowels = ["a", "e", "i", "o", "u"]
+firstName = input("Enter your first name: ")
+length = len(firstName)
+space = " "
+for vowel in vowels:
+    if firstName[0] == vowel:
+        print(space + firstName[1:length])
