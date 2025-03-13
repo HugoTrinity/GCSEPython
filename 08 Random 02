@@ -1,0 +1,5 @@
+import random as r
+
+colours = ["black", "charcoal", "grey", "ash", "white"]
+colour = r.choice(colours)
+print(colour)
