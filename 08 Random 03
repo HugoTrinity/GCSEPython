@@ -1,0 +1,10 @@
+import random as r
+
+coinFace = ["h", "t"]
+coin = r.choice(coinFace)
+guess = input("Heads or Tails (h/t): ")
+if guess == coin:
+    print("You win")
+else:
+    print("bad luck")
+    print("It was" , coin)
