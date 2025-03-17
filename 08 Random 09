@@ -1,0 +1,14 @@
+import random as r
+
+colours = ["red", "green", "blue", "pink", "violet"]
+print(colours)
+choice = r.choice(colours)
+
+guess = input("Guess one colour from this list: ")
+if guess == choice:
+    print("Well done")
+if guess != choice:
+    if choice == "red":
+        print("I bet you're RED in the face right now.")
+    if choice == "blue":
+        print("You are probably feeling Blue right now.")
