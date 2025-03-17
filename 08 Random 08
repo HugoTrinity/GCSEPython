@@ -1,0 +1,12 @@
+import random as r
+
+score = 0
+
+for i in range(0, 5):
+    num1 = r.randint(1, 10)
+    num2 = r.randint(1, 10)
+    answer = num1 + num2
+    guess = int(input("What is {} + {}? ".format(num1, num2)))
+    if guess == answer:
+        score += 1
+print("You scored", score, "out of 5")
