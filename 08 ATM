@@ -1,0 +1,55 @@
+code = 1234
+attempts = 2
+access = False
+balance = 0
+inUse = False
+addraw = 0
+rating = 0
+
+print("Enter password to access account: ")
+
+
+
+while attempts > 0:
+  guess = int(input())
+  if guess != code:
+    print(f"You have {attempts} attempts remaining.")
+    attempts -= 1
+  if guess < 1:
+    print("You have been locked out of this account for getting the password wrong 3 times")
+    exit()
+  if guess == code:
+    print("Access Granted.")
+    attempts -= 10
+  
+if access == False:
+  print("You have been locked out of this account for getting the password wrong 3 times")
+  inUse = False
+
+
+while inUse == True:
+  print("""
+  Possible commands are as follows:
+    balance - to view balance
+    add - to add money to your account
+    withdraw - to withdraw money from your account
+    change - to change your PIN code needed to access this account
+    """)
+  command = input("")
+  if command == "balance":
+    print(balance)
+    command = input("")
+  if command == "add":
+    print(f"How much do you wish to add? You currently have {balance} funds in your balance.")
+    addraw = int(input())
+    balance += addraw
+  if command == "withdraw":
+    print(f"How much do you wish to withdraw? You currently have {balance} funds in your balance.")
+    addraw = int(input())
+    balance += addraw
+  if command == "change":
+     rating = print("Two step verification needed. What would you rate this machine out of 10??")
+     if rating != 10:
+       print("The police are on their way to terminate you for giving me a bad rating.")
+       inUse = False
+    
