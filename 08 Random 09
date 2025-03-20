@@ -4,11 +4,20 @@ colours = ["red", "green", "blue", "pink", "violet"]
 print(colours)
 choice = r.choice(colours)
 
-guess = input("Guess one colour from this list: ")
-if guess == choice:
-    print("Well done")
-if guess != choice:
-    if choice == "red":
-        print("I bet you're RED in the face right now.")
-    if choice == "blue":
-        print("You are probably feeling Blue right now.")
+while True:
+  guess = input("Guess one colour from this list: ")
+  if guess == choice:
+      print("Well done")
+      exit()
+  if guess != choice:
+      if guess == "red":
+          print("I bet you're RED in the face right now.")
+      if guess == "blue":
+          print("You are probably feeling Blue right now.")
+      if guess == "green":
+        print("Eww don't throw up on me!!!!")
+      if guess == "pink":
+        print("I've ran outta ideas lol lol lol lol")
+      if guess == "violet":
+        print("I imagine you're feeling pretty violent right now lol lol lol lol")
+      
