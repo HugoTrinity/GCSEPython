@@ -1,10 +1,18 @@
 code = 1234
-attempts = 2
+attempts = 3
 access = False
 balance = 0
 inUse = False
 addraw = 0
 rating = 0
+
+helps = """
+Possible commands are as follows:
+balance - to view balance
+add - to add money to your account
+withdraw - to withdraw money from your account
+change - to change your PIN code needed to access this account
+"""
 
 print("Enter password to access account: ")
 
@@ -13,28 +21,32 @@ print("Enter password to access account: ")
 while attempts > 0:
   guess = int(input())
   if guess != code:
-    print(f"You have {attempts} attempts remaining.")
     attempts -= 1
-  if guess < 1:
+    print(f"You have {attempts} attempts remaining.")
+  if guess < 0:
     print("You have been locked out of this account for getting the password wrong 3 times")
     exit()
   if guess == code:
     print("Access Granted.")
+    access = True
+    inUse = True
     attempts -= 10
   
 if access == False:
   print("You have been locked out of this account for getting the password wrong 3 times")
   inUse = False
 
-
+if inUse == True:
+    print(helps)
+    
 while inUse == True:
   print("""
-  Possible commands are as follows:
-    balance - to view balance
-    add - to add money to your account
-    withdraw - to withdraw money from your account
-    change - to change your PIN code needed to access this account
-    """)
+Possible commands are as follows:
+balance - to view balance
+add - to add money to your account
+withdraw - to withdraw money from your account
+change - to change your PIN code needed to access this account
+""")
   command = input("")
   if command == "balance":
     print(balance)
@@ -43,13 +55,17 @@ while inUse == True:
     print(f"How much do you wish to add? You currently have {balance} funds in your balance.")
     addraw = int(input())
     balance += addraw
+    command = input("")
   if command == "withdraw":
     print(f"How much do you wish to withdraw? You currently have {balance} funds in your balance.")
-    addraw = int(input())
-    balance += addraw
+    withraw = int(input())
+    balance -= withraw
+    command = input("")
   if command == "change":
-     rating = print("Two step verification needed. What would you rate this machine out of 10??")
+     rating = input(print("Two step verification needed. What would you rate this machine out of 10??"))
      if rating != 10:
        print("The police are on their way to terminate you for giving me a bad rating.")
        inUse = False
+     else:
+        code = print("What would you like to change the code to?")
     
