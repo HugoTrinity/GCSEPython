@@ -1,0 +1,30 @@
+def menu():
+  print("Choose a gamemode: ")
+  options = ["1) Creative", "2) Survival", "3) Hardcore", "4) Adventure", "5) Exit"]
+
+  chosen = False
+  for i in options:
+    print(i)
+
+  while chosen == False:
+    option = int(input(""))
+    if option == 1:
+      print(options[0], "selected")
+      chosen = True
+    elif option == 2:
+      print(options[1], "selected")
+      chosen = True
+    elif option == 3:
+      print(options[2], "selected")
+      chosen = True
+    elif option == 4:
+      print(options[3], "selected")
+      chosen = True
+    elif option == 5:
+      print("Exiting....")
+      chosen = True
+    else:
+      print("Invalid choice -- Choose again: ")
+      option = int(input(""))
+
+menu()
