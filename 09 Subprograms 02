@@ -1,0 +1,17 @@
+def menu():
+  print("""
+1) Domination
+2) Team Deathmatch
+3) Headquarters
+""")
+  
+print("Choose an option: ")
+menu()
+option = int(input(""))
+
+if option == 1:
+  print("Domination selected")
+elif option == 2:
+  print("Team Deathmatch selected")
+elif option == 3:
+  print("Headquarters selected")
