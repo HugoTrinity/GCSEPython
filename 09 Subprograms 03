@@ -1,0 +1,22 @@
+def menu():
+  print("Choose a gamemode: ")
+
+  p1 = "1) 1 Player"
+  p2 = "2) 2 Player"
+  p3 = "3) Online"
+  p4 = "4) Exit"
+  print(p1)
+  print(p2)
+  print(p3)
+  print(p4)
+  option = int(input(""))
+  if option == 1:
+    print(p1, "selected")
+  if option == 2:
+    print(p2, "selected")
+  if option == 3:
+    print(p3, "selected")
+  if option == 4:
+    print(p4, "selected")
+
+menu()
