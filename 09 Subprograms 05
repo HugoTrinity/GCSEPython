@@ -1,0 +1,35 @@
+def tBig():
+    print("Think big chosen")
+def tBigger():
+    print("Think bigger chosen")
+def Winning():
+    print("Winning chosen")
+def Winner():
+    print("Winner chosen")
+
+def menu():
+    print("Enter your option as an integer: ")
+    print("""
+1. Think big
+2. Think bigger
+3. Winning
+4. Winner
+5. Exit""")
+    option = int(input())
+    if option >= 6:
+        print("Invalid Choice")
+        option = int(input("Choose again: "))
+    elif option == 1:
+        tBig()
+    elif option == 2:
+        tBigger()
+    elif option == 3:
+        Winning()
+    elif option == 4:
+        Winner()
+    elif option == 5:
+        print("Bye")
+menu()
+    
+
+    
