@@ -1,0 +1,9 @@
+cars = []
+sentry = True
+while sentry == True:
+    inp = input("Input a car brand or press x to exit: ")
+    if inp == "x":
+        sentry = False
+    else:
+        cars.append(inp)
+print("In the list is:", cars)
