@@ -1,0 +1,9 @@
+nums = []
+for i in range(0, 3):
+    num = int(input("Enter a number to add to the list: "))
+    nums.append(num)
+yn = input("Do you want the last number you entered saved? (yes/no)")
+if yn == "no":
+    nums.pop(2)
+
+print(nums)
