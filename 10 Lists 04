@@ -1,0 +1,9 @@
+programmes = ["The Last of Us", "Stranger Things", "Money Heist", "House"]
+for i in range(0, 4):
+    print(programmes[i])
+
+show = input("Enter another show to put into the list: ")
+index = int(input("Which position do you want it to be in the list: "))
+index -= 1
+programmes.insert(index, show)
+print(programmes)
