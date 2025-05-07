@@ -1,0 +1,10 @@
+food = []
+
+for i in range(0, 4):
+    yum = input("Input a type of food (e.g. Kebab): ")
+    food.append(yum)
+print(food)
+index = int(input("Which food do you want to delete (in numbers)?"))
+index -= 1
+food.pop(index)
+print(food)
