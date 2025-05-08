@@ -1,0 +1,7 @@
+l1 = input("Enter the first line of a nursery rhyme: ")
+ll1 = len(l1)
+print("This has", ll1, "letters in it")
+num1 = int(input("Enter a starting number: "))
+num2 = int(input("Enter an ending number: "))
+extract = l1[num1:num2]
+print(extract)
