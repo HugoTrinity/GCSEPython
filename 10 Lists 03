@@ -1,0 +1,14 @@
+party = []
+
+for i in range(0, 3):
+    guest = input("Who do you want to invite to the party? ")
+    party.append(guest)
+more = input("Do you want to add more? ")
+while more == "yes":
+    guest = input("Who do you want to invite to the party? ")
+    more = input("Do you want to add more? ")
+    party.append(guest)
+
+print(len(party))
+
+    
