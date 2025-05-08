@@ -1,0 +1,13 @@
+import random
+sentry = True
+
+while sentry == True:
+    lName = input("Enter your last name: ")
+    num1 = random.randint(1, 9999)
+    uName = lName + str(num1)
+    print(uName)
+    cont = input("Type 'y' to continue: ")
+    if cont == "y":
+        sentry = True
+    else:
+        sentry = False
