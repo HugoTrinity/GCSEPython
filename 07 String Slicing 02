@@ -1,0 +1,6 @@
+fName = input("Enter your first name: ")
+lName = input("Enter your last name: ")
+Name = fName + " " + lName
+nLength = len(Name)
+print(Name)
+print(nLength)
