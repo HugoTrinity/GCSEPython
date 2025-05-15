@@ -1,0 +1,7 @@
+rows = int(input("How many rows do you want: "))
+columns = int(input("How many columns do you want: "))
+
+EmptyArray = [[0 for column in range(0, columns)] for row in range(rows)]
+
+for i in EmptyArray:
+    print(i)
