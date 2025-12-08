@@ -1,0 +1,20 @@
+sentry = True
+print("""
+0 to exit
+1 for timetables""")
+inp = int(input(""))
+while sentry == True:
+    if inp == 1:
+        num1 = int(input("Which timetables do you want? "))
+        for i in range(13):
+              print(i*num1)
+        inp = int(input("""
+0 to exit
+1 for timetables"""))
+    elif inp == 0:
+        sentry = False
+        print("Exited")
+    else:
+        print("Enter a valid number [0, 10]")
+
+
