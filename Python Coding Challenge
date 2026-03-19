@@ -200,6 +200,8 @@ if PlayAgain == "":
 """
 [] Reorder the wheels.
 [] Stop the user at 0 credits.
+[] Import credits.
+[] Add a bank account.
 """
 
 #COMPLETE
